@@ -1,5 +1,3 @@
-# Credit-Card-Score-Prediction<div align="center">
-
 # 💳 Credit Card Score Prediction
 
 ### An End-to-End Machine Learning Regression Pipeline for Predicting Customer Credit Scores
