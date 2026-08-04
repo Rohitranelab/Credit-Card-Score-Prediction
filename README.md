@@ -59,15 +59,11 @@
 
 ## 🎬 Demo
 
-> 🖼️ *Add a screenshot of the Streamlit app here.*
+After entering applicant details, the model predicts credit score in real time:
+![Credit Card Score Prediction UI](https://github.com/Rohitranelab/Credit-Card-Score-Prediction/blob/main/Images/credit-score-prediction-ui.png)
 
-```
-![App Screenshot](assets/demo-screenshot.png)
-```
-
-> 🎥 *Add a short GIF or demo video walkthrough here.*
-
-> 🌐 **Live Deployment:** Not implemented — the app is Docker-ready but no public hosted link is included in this repository.
+After entering applicant details and clicking **Predict**, the model returns an credit score of the applicant:
+![Credit Card Score Prediction Result](https://github.com/Rohitranelab/Credit-Card-Score-Prediction/blob/main/Images/credit-score-prediction-result.png)
 
 ---
 
@@ -82,8 +78,6 @@
 - [x] Interactive **Streamlit** prediction UI
 - [x] **Docker**-ready for containerized deployment
 - [x] Reproducible, notebook-driven workflow
-- [ ] Hyperparameter tuning — *Not implemented*
-- [ ] Automated CI/CD pipeline — *Not implemented*
 
 ---
 
@@ -116,6 +110,10 @@
 ```
 Credit-Card-Score-Prediction/
 │
+├── Images
+│   ├── credit-score-prediction-ui.png
+│   ├── credit-score-prediction-result.png
+│
 ├── artifact/
 │   ├── credit_score.pkl          # Trained Gradient Boosting regression model
 │   └── encoder.pkl               # Fitted LabelEncoder for 'payment_history'
@@ -134,6 +132,7 @@ Credit-Card-Score-Prediction/
 ```
 
 **Folder notes:**
+- `Images/` — images of the project result
 - `artifact/` — serialized objects loaded directly by `app.py` at inference time.
 - `data/` — source CSV consumed by the training notebook.
 - `notebooks/` — single notebook covering the entire ML workflow end-to-end.
